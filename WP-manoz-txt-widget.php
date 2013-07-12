@@ -32,7 +32,7 @@ class manozWidgetTxt extends WP_Widget {
 		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
 		$text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
 
-		// On créer une classe css globale pour personnaliser le widget
+		// On créer un id css global pour personnaliser le widget
 		echo '<div id="mnz-txt-container">';
 
 		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; } ?>
