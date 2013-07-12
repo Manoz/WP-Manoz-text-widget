@@ -9,7 +9,7 @@ Nous avons donc acheté le thème en question et personnalisé les 3/4 des élé
 Voici comment il fonctionne
 ---------------------------
 
-*Installation :* il s'installe comme un plugin classique. Vous le mettez dans votre dossier `wp-content\plugins` et vous l'activez ensuite dans `Apparence\Widgets` de votre admin pannel.
+**Installation :** il s'installe comme un plugin classique. Vous le mettez dans votre dossier `wp-content\plugins` et vous l'activez ensuite dans `Apparence\Widgets` de votre admin pannel.
 
 Il fonctionne comme un widget classique de wordpress. On le charge en lui donnant un nom (entre autre) avec la `function load_manoz_txt_widget()`.
 Le reste du contenu est le contenu classique d'un widget de Wordpress. Je vous invite à vous rendre sur leur Wiki pour en savoir plus.
