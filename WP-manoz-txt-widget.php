@@ -19,16 +19,13 @@ class manozWidgetTxt extends WP_Widget {
 	function manozWidgetTxt() {
 
 		$widget_ops = array( 'classname' => 'mnz-txt-widget', 'description' => 'Simple widget de texte (ou code html)', 'before_widget' => '<div id="mnz-txt-widget">','after_widget'  => "</div>" );
-		
 		// Taille du widget ici.
 		$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'manoz-text' );
-
 		$this->WP_Widget( 'manoz-text', 'Manoz Text Widget', $widget_ops, $control_ops );
 	}
 	
 	function widget( $args, $instance ) {
 		extract($args);
-
 		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
 		$text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
 
@@ -40,7 +37,6 @@ class manozWidgetTxt extends WP_Widget {
 		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; } ?>
 			<div class="textwidget"><?php echo !empty( $instance['filter'] ) ? wpautop( $text ) : $text; ?></div>
 		<?php
-
 		echo '</div>';
 	}
 
@@ -59,7 +55,8 @@ class manozWidgetTxt extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, array( 'title' => '', 'text' => '' ) );
 		$title = strip_tags($instance['title']);
 		$text = esc_textarea($instance['text']);
-?>
+		?>
+		
 		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 
@@ -69,5 +66,4 @@ class manozWidgetTxt extends WP_Widget {
 <?php
 	}
 }
-
 ?>
