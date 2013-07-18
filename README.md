@@ -7,21 +7,21 @@ English
 *French see below*
 
 I didn't liked the Wordpress base text widget. I decided to make my own.
-I realized the thing with a client who insisted on a *ThemeForest * theme.
+I realized the thing with a client who insisted on a *ThemeForest* theme.
 
 We bought the theme and personalized 3/4 elements. The only problem was the widgets text in which we put the html content. Customization class was boring and uninteresting. That's why I decided to create this widget.
 
 ### Here's how it works
 
-**Installation :** Install it like a conventional plug. You put in your `wp-content \ plugins` and then you turn in `Appearance \ Widgets` your admin pannel.
+**Installation :** Install it like a conventional plugin. You put in your `wp-content \ plugins` and then you turn in `Appearance \ Widgets` your admin pannel.
 
-It works like a regular widget wordpress. We care by giving it a name (among others) with the `load_manoz_txt_widget function ()`.
-The rest of the content is the content of a classic widget Wordpress. I invite you to visit their wiki for more information.
+It works like a regular wordpress widget. We care by giving it a name (among others) with the `load_manoz_txt_widget function ()`.
+The rest of the content is the content of a classic WP Widget. I invite you to visit their wiki for more information.
 
 Note that the main css id (the container actually) the widget is added to the line 36: `echo '<div id="mnz-txt-container">'`. You can change it by replacing it with that of your theme, simply.
 Then we have a class within the class which is the default WordPress widgets if my memory is correct: `<div class="textwidget"> <php echo empty ($ instance ['filter'])? wpautop ($ text): $ text;> </ div> `?.
 
-And that's all folks! For you to use as you see fit :)
+And that's all folks! Use it as you wish :)
 
 French
 ------
