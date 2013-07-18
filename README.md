@@ -4,7 +4,7 @@ WP-Manoz-text-widget
 English
 -------
 
-//French see below//
+*French see below*
 
 I didn't liked the Wordpress base text widget. I decided to make my own.
 I realized the thing with a client who insisted on a *ThemeForest * theme.
@@ -13,7 +13,7 @@ We bought the theme and personalized 3/4 elements. The only problem was the widg
 
 ### Here's how it works
 
-**Installation **: ** Install it like a conventional plug. You put in your `wp-content \ plugins` and then you turn in `Appearance \ Widgets` your admin pannel.
+**Installation :** Install it like a conventional plug. You put in your `wp-content \ plugins` and then you turn in `Appearance \ Widgets` your admin pannel.
 
 It works like a regular widget wordpress. We care by giving it a name (among others) with the `load_manoz_txt_widget function ()`.
 The rest of the content is the content of a classic widget Wordpress. I invite you to visit their wiki for more information.
